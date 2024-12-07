@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">  
+
+</head>
+<body>
+    <strong>
+        <div class="screen" id="screen"></div>
+        <div class="all">
+       
+            <div class="number">
+        <div class="cart">
+            <button value="1" onclick="screen_btn(value)">1</button>
+            <button value="2" onclick="screen_btn(value)">2</button>
+            <button value="3" onclick="screen_btn(value)">3</button>
+            
+        </div>
+
+                
+        <div class="cart">
+            <button value="4"  onclick="screen_btn(value)">4</button>
+            <button value="5"  onclick="screen_btn(value)">5</button>
+            <button value="6"  onclick="screen_btn(value)">6</button>
+        </div>
+
+         <div class="cart">
+            <button value="7"  onclick="screen_btn(value)">7</button>
+            <button value="8"  onclick="screen_btn(value)">8</button>
+            <button value="9"  onclick="screen_btn(value)">9</button>
+        </div>
+        <div class="cart">
+            <button value="."  onclick="screen_btn(value)"><i class="fa-solid fa-circle"></i></button>
+            <button value="0"  onclick="screen_btn(value)">0</button>
+            <button value="" onclick="deletAll(value)" >C</button>
+            <button id="delet" onclick="delet()"><i class="fa-solid fa-delete-left"></i></button>
+         
+        </div>
+    </div>
+    <div class="calc">
+
+        <button value="+"  onclick="screen_btn(value)">+</button>
+        <button value="-"  onclick="screen_btn(value)">-</button>
+        <button value="/"  onclick="screen_btn(value)"><i class="fa-solid fa-divide"></i></button>
+        <button value="*"  onclick="screen_btn(value)">x</button>
+        <button onclick="equal()">=</button>
+        <!-- <button value="()">()</button> -->
+    </div>
+</div>
+        
+    </strong>
+    
+    <script src="script.js"></script>
+</body>
+</html>
